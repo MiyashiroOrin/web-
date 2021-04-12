@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="../js/goto_weblist.js"></script>
+</head>
+
+<body>
+<p><strong添加一个新事项</strong></p>
+<p>事项名：&nbsp; &nbsp;&nbsp;<input name="title" type="text"></p>
+<p>事项类型：<input name="type" type="text"></p>
+<p>事项描述：<input name="content" type="text"></p>
+<p>事项开始时间：<input name="startline" type="text"></p>
+<p>事项结束时间：<input name="deadline" type="text"></p>
+<p>备注：<input name="tips" type="text"></p>
+<p>事项进度：<input name="completion" type="text"></p>
+<form action="/web" method="post">
+	
+<p><button type="submit">点此<strong>添加事项</strong></button></p>
+	
+<p><button type="submit" onclick='goto_weblist()'>
+	点此<strong>查看目前待办事项</strong>
+		</button></p>
+</body>
+</html>
